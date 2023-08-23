@@ -27,15 +27,6 @@ def convert_to_json(string):
     return json.dumps(serialized_items, default=lambda x: None, indent=2)  # Adding pretty-printing indent
 
 if __name__ == "__main__":
-    string = """
-[0] Weeds A bunch of obnoxious weeds
-[2] Stone A common material with many uses in crafting and building
-[4] Stone A common material with many uses in crafting and building
-[16] Wild Horseradish A spicy root found in the spring
-[18] Daffodil A traditional spring flower that makes a nice gift
-[20] Leek A tasty relative of the onion
-[22] Dandelion Not the prettiest flower, but the leaves make a good salad
-    """
     print('Printing Values:\n')
     jsonStardewItems = convert_to_json(codesString)
     script_dir = os.path.dirname(os.path.abspath(__file__))
