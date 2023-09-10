@@ -1,0 +1,57 @@
+%gradientBackground {
+  background: rgb(225,171,113);
+  background: linear-gradient(0deg, rgba(225,171,113,0.49781659388646293) 0%, rgba(255,201,121,1) 100%);
+  background: -webkit-linear-gradient(0deg, rgba(225,171,113,0.49781659388646293) 0%, rgba(255,201,121,1) 100%);
+  background: -moz-linear-gradient(10deg, rgba(225,171,113,0.49781659388646293) 0%, rgba(255,201,121,1) 100%);
+
+  box-shadow: 1px 1px 0px 6px rgba(204,146,94,1) inset;
+  -webkit-box-shadow: 1px 1px 0px 6px rgba(204,146,94,1) inset;
+  -moz-box-shadow: 1px 1px 0px 6px rgba(204,146,94,1) inset;
+}
+
+%gradientInput {
+  background: rgb(246,199,130);
+  background: linear-gradient(180deg, rgba(246,199,130,1) 0%, rgba(234,174,113,1) 100%);
+  background: -webkit-linear-gradient(180deg, rgba(246,199,130,1) 0%, rgba(234,174,113,1) 100%);
+  background: -moz-linear-gradient(180deg, rgba(246,199,130,1) 0%, rgba(234,174,113,1) 100%);
+  transition: all .2s ease-in-out;
+
+  box-shadow: -3px 1px 0px 6px rgba(204,146,94,1) inset;
+  -webkit-box-shadow: -3px 1px 0px 6px rgba(204,146,94,1) inset;
+  -moz-box-shadow: -3px 1px 0px 6px rgba(204,146,94,1) inset;
+
+  &:hover {
+    box-shadow: 1px 0px 21px 0px rgba(250,229,169,0.75) inset;
+    -webkit-box-shadow: 1px 0px 21px 0px rgba(250,229,169,0.75) inset;
+    -moz-box-shadow: 1px 0px 21px 0px rgba(250,229,169,0.75) inset;
+  }
+
+  &:focus {
+    box-shadow: -3px 1px 0px 6px rgba(250,229,169,0.75) inset;
+    -webkit-box-shadow: -3px 1px 0px 6px rgba(250,229,169,0.75) inset;
+    -moz-box-shadow: -3px 1px 0px 6px rgba(250,229,169,0.75) inset;
+  }
+}
+
+%backgroundImage {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+%none {
+  border: none;
+  outline: none;
+  background: none;
+}
+
+%centerGrid {
+  display: grid;
+  place-content: center;
+}
+
+%centerFlex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

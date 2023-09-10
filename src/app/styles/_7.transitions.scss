@@ -1,0 +1,35 @@
+@keyframes transitionIn {
+  0% {
+    opacity: 0;
+    transform: rotateX(-10px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: rotateX(0deg);
+  }
+}
+
+@keyframes transitionOut {
+  0% {
+    opacity: 0;
+    transform: rotateX(0deg);
+  }
+
+  100% {
+    opacity: 1;
+    transform: rotateX(10px);
+  }
+}
+
+@keyframes transitionRight {
+  0% {
+    opacity: 0;
+    transform: translateX(10px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
