@@ -5,8 +5,13 @@ type Props = {}
 const index = (props: Props) => {
   return (
     <>
-    <div className={styles.Title}>My own text </div>
-    <div>My own text </div>
+
+    <div className={styles.container} >
+        <div>
+            <div className={styles.title}>Stardew </div>
+            <div className={`${styles.title} ${styles.subtitle}`}>Valley</div>
+        </div>
+    </div>
     </>
   )
 }

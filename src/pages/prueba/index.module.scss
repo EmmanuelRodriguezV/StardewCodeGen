@@ -1,7 +1,33 @@
-.Title{
+@font-face {
     font-family: 'stardew_all_caps';
-    background-color: aqua;
-}
-.TitleDif{
+    src: url('../../../public/fonts/StardewValleyALLCAPS.ttf');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  @font-face {
     font-family: 'stardew_regular';
+    src: url('../../../public/fonts/StardewValleyRegular.ttf');
+    font-weight: normal;
+    font-style: normal;
+  }
+/* Your existing styles */
+.title {
+    font-family: 'stardew_all_caps';
+    font-size:5vw; 
+    color: forestgreen;
+}
+.container {
+    display: flex;
+    justify-content: center; /* Center horizontally */
+   // align-items: center; /* Center vertically */
+    height: 100vh; /* Adjust the container's height as needed */
+    margin-top: 50px;
+}
+.titleregular {
+    font-family: 'stardew_regular';
+}
+.subtitle{
+  margin-left: 30px;
+  margin-right: 30px;
 }
