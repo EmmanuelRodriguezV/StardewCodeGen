@@ -5,7 +5,9 @@ export default function Home() {
   return (
     <main className={styles.main}>
       <div className={styles.frame}>
-        <div className={styles.base}></div>
+        <div className={styles.base}>
+          <div className={styles.square}></div>
+        </div>
       </div>
     </main>
   )
