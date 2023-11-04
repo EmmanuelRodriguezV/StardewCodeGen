@@ -110,6 +110,7 @@ a {
   }
 }
 
+
 /* Chrome, Edge and Safari */
 ::-webkit-scrollbar {
   height: 10px;
@@ -137,5 +138,4 @@ a {
 ::-webkit-scrollbar-thumb:active {
   background-color: #B95908;
 }
-
 
