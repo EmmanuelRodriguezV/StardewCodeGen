@@ -6,9 +6,6 @@ import styles from '../../app/page.module.css'
 export default function Authors() {
   return (
     <main className={styles.main}>
-      <div>
-        <Image src='/logo.png' alt='Stardew Valley Codes' width={255} height={143} priority/>
-      </div>
       <div className={styles.frame}>
         <div className={styles.base}>
           <div className={styles.square} style={{ width: '166px', height: '154px'}}>
