@@ -7,6 +7,13 @@ export default function Home() {
       <div className={styles.frame}>
         <div className={styles.base}>
           <div className={styles.square}></div>
+          <div className={styles.square}></div>
+          <div className={styles.square}></div>
+          <div className={styles.square}></div>
+          <div className={styles.square}></div>
+          <div className={styles.square}></div>
+          <div className={styles.square}></div>
+          <div className={styles.square}></div>
         </div>
       </div>
     </main>

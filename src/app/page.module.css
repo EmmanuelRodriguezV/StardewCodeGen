@@ -11,7 +11,8 @@
 }
 .base {
   width: 100%;
-  height: 100%;
+  height: 56vh;
+  overflow-y: auto;
 
   border: 4px solid #853604;
 
