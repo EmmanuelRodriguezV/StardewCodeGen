@@ -29,6 +29,9 @@
 }
 
 .square {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 83px;
   height: 83px;
   margin: 3rem;
