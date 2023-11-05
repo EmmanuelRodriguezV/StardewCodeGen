@@ -20,7 +20,7 @@ export default function Navbar() {
             </div> :
             <div className={layoutTitle.btn} onClick={() => router.push('/authors') }>
                 <Image src='/chicken.png' alt='hen' width={60} height={60}/>
-                <p style={{ marginLeft: '0.5rem' }}>Meet the author</p>
+                <p style={{ marginLeft: '0.5rem' }}>Meet the authors</p>
             </div>
         }
         </div>
