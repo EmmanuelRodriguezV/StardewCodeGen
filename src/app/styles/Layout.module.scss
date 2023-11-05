@@ -1,8 +1,33 @@
-.layoutTitle{
+.layoutTitle {
     display: flex;
     align-items: center;
-    align-content: center;
+    justify-content: flex-end;
     width: 100%;
-    flex-direction: column;
-    margin-bottom: 2rem;
-}
+    padding: 2rem 6rem;
+
+    .content {
+        display: flex;
+        width: 55%;
+        justify-content: space-between;
+
+        .btn {
+            display: flex;
+            align-items: center;
+            font-family: 'Gill Sans', sans-serif;
+            font-size: x-large;
+            border-radius: 12px;
+            height: fit-content;
+            padding: 0.5rem;
+          
+            &:hover {
+              cursor: pointer;
+              background-color: rgba(240, 248, 255, 0.222);
+              transition: all 0.2s ease-in-out;
+            }
+          }
+
+    }
+  }
+  .cursorPointer{
+    cursor: pointer;
+  }
