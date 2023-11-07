@@ -29,6 +29,9 @@
 }
 
 .square {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 83px;
   height: 83px;
   margin: 3rem;
@@ -50,3 +53,14 @@
   color: #221123;
 }
 
+.rowAuthors {
+  display: flex;
+  margin: 3rem 3rem 2rem 3rem;
+}
+
+.textAuthor {
+  margin-left: 1rem;
+  color: #853604;
+  font-family: 'Gill Sans', sans-serif;
+  font-size: x-large;
+}
