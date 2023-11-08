@@ -1,6 +1,6 @@
 'use client'
 import React, { useState } from 'react'
-import styles from '../../page.module.css'
+import styles from '../../styles/Layout.module.scss'
 import Image from 'next/image'
 import Tooltip from '../tooltip'
 
