@@ -85,6 +85,7 @@
     padding: 3rem ;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(85px, 85px));
+    grid-template-rows: max-content;
     gap: 10px; // Espacio entre elementos (ajusta según tu preferencia)
   }
 
