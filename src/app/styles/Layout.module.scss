@@ -82,9 +82,9 @@
   &.fullScreen {
     height: 56vh;
     border: 4px solid #853604;
-    padding: 3rem;
+    padding: 3rem ;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(85px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(85px, 85px));
     gap: 10px; // Espacio entre elementos (ajusta según tu preferencia)
   }
 

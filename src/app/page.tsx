@@ -2,20 +2,22 @@ import styles from './styles/Layout.module.scss'
 import SquareItem from './components/squareItem'
 
 export default function Home() {
-  const itemsData = [
-    {
-      name: 'Test1',
-      route: '/imagesTest/1.webp'
-    },
-    {
-      name: 'Test1',
-      route: '/imagesTest/1.webp'
-    },
-    {
-      name: 'Test1',
-      route: '/imagesTest/1.webp'
-    }
-  ]
+  // const itemsData = [
+  //   {
+  //     name: 'Test1',
+  //     route: '/imagesTest/1.webp'
+  //   },
+  //   {
+  //     name: 'Test1',
+  //     route: '/imagesTest/1.webp'
+  //   },
+  //   {
+  //     name: 'Test1',
+  //     route: '/imagesTest/1.webp'
+  //   }
+  // ]
+  
+  const itemsData = Array(20).fill({name:'Test1',route:'/imagesTest/1.webp'}) //Array(100).map( (_,index ) => {return {name:'Test1',route:'/imagesTest/1.webp'}  })
   return (
     <main className={styles.main}>
       
