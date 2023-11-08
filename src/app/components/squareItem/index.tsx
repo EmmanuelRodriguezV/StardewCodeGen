@@ -1,15 +1,17 @@
-import React from 'react'
+'use client'
+import React, { useState } from 'react'
 import styles from '../../page.module.css'
 import Image from 'next/image'
 import Tooltip from '../tooltip'
 
 export default function SquareItem({data}: any) {
+  const [showTooltip, setShowTooltip] = useState(false)
   return (
     <>
-    <div className={styles.square}>
+    <div className={styles.square} onMouseEnter={() => setShowTooltip(true)} onMouseLeave={() => setShowTooltip(false)} >
       <Image alt={data.name} width={60} height={60} src={data.route}/>
     </div>
-    <Tooltip item={data}/>
+    {showTooltip && <Tooltip item={data}/>}
     </>
   )
 }

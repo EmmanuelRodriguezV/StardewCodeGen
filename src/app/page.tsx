@@ -6,6 +6,14 @@ export default function Home() {
     {
       name: 'Test1',
       route: '/imagesTest/1.webp'
+    },
+    {
+      name: 'Test1',
+      route: '/imagesTest/1.webp'
+    },
+    {
+      name: 'Test1',
+      route: '/imagesTest/1.webp'
     }
   ]
   return (
