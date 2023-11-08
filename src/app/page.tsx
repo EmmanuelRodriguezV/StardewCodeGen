@@ -1,5 +1,4 @@
-import Image from 'next/image'
-import styles from './page.module.css'
+import styles from './styles/Layout.module.scss'
 import SquareItem from './components/squareItem'
 
 export default function Home() {
@@ -12,8 +11,8 @@ export default function Home() {
   return (
     <main className={styles.main}>
       
-      <div className={styles.frame}>
-        <div className={styles.base}>
+      <div className={`${styles.frame} ${styles.fullScreen}`}>
+        <div className={`${styles.base} ${styles.fullScreen}`}>
           {
             itemsData.map((item, index) => {
              return <SquareItem key={index} data={item} />
