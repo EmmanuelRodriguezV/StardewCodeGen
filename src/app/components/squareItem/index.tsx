@@ -6,12 +6,19 @@ import Tooltip from '../tooltip'
 
 export default function SquareItem({data}: any) {
   const [showTooltip, setShowTooltip] = useState(false)
+  const handleImageError = () =>{
+   return <Image alt="Default Image" width={60} height={60} src="/imagesTest/1.webp" />;
+  }
+  const IMAGE_PATH = '/assets';
   return (
     <>
-    <div className={styles.square} onMouseEnter={() => setShowTooltip(true)} onMouseLeave={() => setShowTooltip(false)} >
-      <Image alt={data.name} width={60} height={60} src={data.route}/>
+    {
+     data?.srcImageName&& <div className={styles.square} onMouseEnter={() => setShowTooltip(true)} onMouseLeave={() => setShowTooltip(false)} >
+     <Image alt={data?.itemTitle} width={60} height={60} src={`${IMAGE_PATH}/${data.srcImageName}`} onError={handleImageError} />
     </div>
-    {showTooltip && <Tooltip item={data}/>}
+    }
+    {showTooltip && data?.srcImageName && <Tooltip item={data}/>}
+    
     </>
   )
 }
