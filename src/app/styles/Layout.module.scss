@@ -128,13 +128,60 @@
 .main {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
   align-items: center;
   padding:  0 6rem 6rem 6rem;
   min-height: 100vh;
+  justify-content: flex-start;
 
   font-family: Tahoma, Verdana, sans-serif;
   color: #221123;
+
+  .top {
+    display: flex;
+    justify-content: space-between;
+    height: 4rem;
+
+    .toogleBtn {
+      width: 3.5rem;
+      height: 3.5rem;
+      border-radius: 2rem;
+      border: 2.5px solid #853604;
+      background: #FC9403;
+      padding: 2px;
+
+      box-shadow: .5px -1px 0px 4px rgba(177,77,5,1) inset;
+      -webkit-box-shadow: .5px -1px 0px 4px rgba(177,77,5,1) inset;
+      -moz-box-shadow: .5px -2px 0px 4px rgba(177,77,5,1) inset;
+
+      .baseBtn {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 97%;
+        border: 3px solid #853604;
+        border-radius: 2rem;
+        padding: 10px;
+
+        background: rgb(225,171,113);
+        background: linear-gradient(0deg, rgba(225,171,113,0.7) 0%, rgba(255,201,121,1) 100%);
+        background: -webkit-linear-gradient(0deg, rgba(225,171,113,0.7) 0%, rgba(255,201,121,1) 100%);
+        background: -moz-linear-gradient(0deg, rgba(225,171,113,0.7) 0%, rgba(255,201,121,1) 100%);
+    
+        box-shadow: 0px 0px 0px 4px rgba(204,146,94,1) inset;
+        -webkit-box-shadow: 0px 0px 0px 4px rgba(204,146,94,1) inset;
+        -moz-box-shadow: 0px 0px 0px 4px rgba(204,146,94,1) inset;
+
+        &:hover {
+          transition: all .2s ease-out;
+          background: rgb(225,171,113);
+          background: linear-gradient(0deg, rgba(225,171,113,0.7) 90%, rgba(255,201,121,1) 100%);
+          background: -webkit-linear-gradient(0deg, rgba(225,171,113,0.7) 90%, rgba(255,201,121,1) 100%);
+          background: -moz-linear-gradient(0deg, rgba(225,171,113,0.7) 90%, rgba(255,201,121,1) 100%);
+        }
+      }
+    }
+  }
 }
 
 .rowAuthors {
