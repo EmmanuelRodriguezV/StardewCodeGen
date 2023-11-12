@@ -4,49 +4,33 @@ import styles from '../../styles/Layout.module.scss'
 import Image from 'next/image'
 import Tooltip from '../tooltip'
 
-
 export default function SquareItem({data}: any) {
   // onMouseLeave={() => setShowTooltip(false)} > 
   const [showTooltip, setShowTooltip] = useState(false)
-  const tooltipRef = useRef(null);
+  const [top, setTop] = useState(0)
+  const [left, setLeft] = useState(0)
+  const cardRef = useRef(null)
   const handleImageError = () =>{
    return <Image alt="Default Image" width={60} height={60} src="/imagesTest/1.webp" />;
   }
   const IMAGE_PATH = '/assets';
-  const handleMouseEnter = () => {
-    const element = tooltipRef.current;
-    if (element) {
-      const rect = element.getBoundingClientRect();
-      const tooltip = element.querySelector('.tooltip'); // Adjust the selector as needed
-      if (tooltip) {
-        // Position the tooltip below the element
-        tooltip.style.top = `${rect.bottom}px`;
-        tooltip.style.left = `${rect.left}px`;
-        setShowTooltip(true);
-      }
-    }
-  };
+  
   return (
     <> {
-     data?.srcImageName&& <div
-   
+     data?.srcImageName && <div
+     ref = {cardRef}
      className={styles.square}
      onMouseEnter={() => {
-      const element = tooltipRef.current;
-      if (element) {
-        const rect = element.getBoundingClientRect();
-        const tooltip = element.querySelector('.tooltip'); // Adjust the selector as needed
-        if (tooltip) {
-          // Position the tooltip below the element
-          tooltip.style.top = `${rect.bottom}px`;
-          tooltip.style.left = `${rect.left}px`;
-          setShowTooltip(true);
-        }
+      const elementCard = cardRef.current
+      let rectCard:DOMRect
+      if(elementCard){
+        rectCard = cardRef.current.getBoundingClientRect()
+        setTop(rectCard.bottom)
+        setLeft(rectCard.right)
       }
        setShowTooltip(true);
      }}
      onMouseLeave={() => {
-       console.log('Mouse left the square');
        setShowTooltip(false);
      }}
    >
@@ -54,7 +38,7 @@ export default function SquareItem({data}: any) {
      <Image alt={data?.itemTitle} width={60} height={60} src={`${IMAGE_PATH}/${data.srcImageName}`} onError={handleImageError} />
     </div>
     }
-     {showTooltip && data?.srcImageName && <Tooltip   ref= {tooltipRef} key={data.code} item={data}/>}
+     {showTooltip && data?.srcImageName && <Tooltip key={data.code} item={data} top={top} left={left}/>}
     
     </>
   )
